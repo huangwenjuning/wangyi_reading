@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/libraries/libraries",
+    "pages/mine/mine"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "网易蜗牛读书",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color":"#999999",
+    "selectedColor":"#F788AB",
+    "backgroungColor":"#ffffff",
+    "borderStyle":"#e0e0e0",
+    "list": [
+      {
+        "pagePath":"pages/index/index",
+        "iconPath": "assets/icons/index.png",
+        "selectedIconPath": "assets/icons/index_sel.png",
+        "text":"首页"
+      },
+      {
+        "pagePath":"pages/libraries/libraries",
+        "iconPath": "assets/icons/libraries.png",
+        "selectedIconPath": "assets/icons/libraries_sel.png",
+        "text":"书库"
+      },
+      {
+        "pagePath":"pages/mine/mine",
+        "iconPath": "assets/icons/mine.png",
+        "selectedIconPath": "assets/icons/mine_sel.png",
+        "text":"我的"
+      }
+    ]
+  }
+}
