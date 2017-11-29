@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/libraries/libraries",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/common/list"
   ],
   "window":{
     "backgroundTextStyle":"light",

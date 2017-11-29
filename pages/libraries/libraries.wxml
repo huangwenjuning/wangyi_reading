@@ -1,2 +1,36 @@
 <!--pages/libraries/libraries.wxml-->
-<text>pages/libraries/libraries.wxml</text>
+<view class="container">
+    <!-- 头部，搜索框和免费领时长 -->
+    <view class="page__hd center">
+        <view class="page__hd-search">
+            <input placeholder="搜索作者、书名和其它" />
+        </view>
+        <view class="page__hd-rt fr">推荐</view>
+    </view>
+    <view class="weui-tab">
+        <view class="swiper-tab">
+            <view class="swiper-item {{activeIndex==0?'active':''}}" bindtap="changTab" data-index="0">名著</view>
+            <view class="swiper-item {{activeIndex==1?'active':''}}" bindtap="changTab" data-index="1">诗歌</view>
+            <view class="swiper-item {{activeIndex==2?'active':''}}" bindtap="changTab" data-index="2">科普</view>
+            <view class="swiper-item {{activeIndex==3?'active':''}}" bindtap="changTab" data-index="3">小说</view>
+            <view class="swiper-item {{activeIndex==4?'active':''}}" bindtap="changTab" data-index="4">其它</view>            
+        </view>
+        <swiper current='{{activeIndex}}' bindChange="swiperTab">
+            <swiper-item>
+                <view class="swiper-tab-item weui-tab__content">名著</view>
+            </swiper-item>
+            <swiper-item>
+                <view class="swiper-tab-item weui-tab__content">诗歌</view>
+            </swiper-item>
+            <swiper-item>
+                <view class="swiper-tab-item weui-tab__content">科普</view>
+            </swiper-item>
+            <swiper-item>
+                <view class="swiper-tab-item weui-tab__content">小说</view>
+            </swiper-item>
+            <swiper-item>
+                <view class="swiper-tab-item weui-tab__content">其它</view>
+            </swiper-item>
+        </swiper>
+    </view>
+</view>

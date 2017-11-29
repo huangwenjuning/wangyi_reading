@@ -1,4 +1,33 @@
 <!--index.wxml-->
 <view class="container">
-  
+    <!-- 头部，搜索框和免费领时长 -->
+    <view class="page__hd center">
+            <view class="page__hd-search">
+                <input placeholder="搜索作者、书名和其它" />
+            </view>
+            <view class="page__hd-rt fr">推荐</view>
+    </view>
+    <view class="weui-tab">
+        <view class="swiper-tab">
+            <view class="swiper-item {{activeIndex==0?'active':''}}" bindtap="changTab" data-index="0">领读</view>
+            <view class="swiper-item {{activeIndex==1?'active':''}}" bindtap="changTab" data-index="1">在读榜</view>
+            <view class="swiper-item {{activeIndex==2?'active':''}}" bindtap="changTab" data-index="2">新书榜</view>
+        </view>
+        <swiper current='{{activeIndex}}' bindChange="swiperTab">
+            <swiper-item>
+              <view class="swiper-tab-item weui-tab__content">领读</view>
+            </swiper-item>
+            <swiper-item>
+              <view class="swiper-tab-item weui-tab__content">在读榜</view>
+            </swiper-item>
+            <swiper-item>
+              <view class="swiper-tab-item weui-tab__content">新书榜</view>
+            </swiper-item>
+        </swiper>      
+    </view>
+    <!-- <view class="page__bd center">
+       <view class="page__bd-items"></view>
+       <view class="page__bd-items"></view>
+       <view class="page__bd-items"></view>
+   </view> -->
 </view>
