@@ -1,45 +1,103 @@
 /**index.wxss**/
 .page__hd {
   width: 100%;
-  height: 130rpx;
+  height: 100rpx;
   background: #ffffff;
 }
-.page__hd_search {
-  height: 80rpx;
-  background: #000;
-  border-radius: 40rpx; 
-  font-size: 32rpx;
-  color: #fff;
+.page__hd:before {
+  content: "";
+  position: absolute;
+  top: 80rpx;
+  left: 0;
+  right: 0;
+  border-top: 1rpx solid #F6F6F6;
 }
-.page__hd_search image {
-  width: 38rpx;
-  height: 44rpx;
-  margin-left: 10rpx;
+.page__hd-pagetitle {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #444;
 }
-.active {
-  color: #f65959;
+.page__bd {
 }
-.swiper-tab {
+.page__bd-head {
+  height: 128rpx;
+  margin-left: 30rpx;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-bottom: 1rpx solid #ededed;
 }
-.swiper-tab-item {
-  flex: 1;
-  text-align: center;
+.page__bd-head image {
+  width: 66rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+}
+.artic-author {
+  display: inline-block;
+  margin-top: 8rpx;
+  /* margin-bottom: 40rpx; */
+  /* line-height: 28rpx; */
+  margin-left: 28rpx; 
+  font-size: 28rpx; 
+  color:#444;
+}
+.page__bd-banner {
+ 
+}
+.page__bd-banner image {
+  margin-top: -46rpx;
+  width: 688rpx;
+  height: 302rpx;
+  border-radius: 15rpx;
+}
+.page__bd-middle {
+  width: 688rpx;
+}
+.page__bd-middle .artic-title, .page__bd-middle .artic-content {
+  margin-left: 34rpx;
+}
+.page__bd-middle .artic-title {
+  margin-top: 32rpx;
+  margin-bottom: 32rpx;
+  font-size: 44rpx;
+  color: #444;
+  font-weight: bold;
+}
+.page__bd-middle .artic-content {
   font-size: 32rpx;
-  height: 90rpx;
-  color: #999999;
-  line-height: 90rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box; 
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2; 
+  /* white-space:nowrap; */
+  color: #7F7F7F;
+  margin-bottom: 28rpx;
 }
-swiper {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  height: 800rpx;
+.page__bd-foot {
+  height: 92rpx;
 }
-swiper-item {
-  overflow-y: scroll;
+.page__bd-foot .foot-lt, .page__bd-foot .foot-rt {
+  color: #C6C6C6;
+  font-size: 28rpx;
+}
+.page__bd-foot .foot-lt {
+  margin-left: 34rpx;  
+}
+.page__bd-foot .foot-rt {
+  text-align: right;
+  margin-right: 72rpx;
+}
+.foot-rt .finger {
+
+}
+.finger image {
+  width: 28rpx;
+  height: 28rpx;
+  transform: translate(44rpx, -42rpx);
+}
+.page__bd-foot:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 228rpx;
+  border-top: 16rpx solid #F6F6F6;
 }

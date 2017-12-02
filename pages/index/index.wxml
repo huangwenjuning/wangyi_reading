@@ -1,33 +1,47 @@
-<!--index.wxml-->
 <view class="container">
-    <!-- 头部，搜索框和免费领时长 -->
-    <view class="page__hd center">
-            <view class="page__hd-search">
-                <input placeholder="搜索作者、书名和其它" />
-            </view>
-            <view class="page__hd-rt fr">推荐</view>
+    <view class="page__hd">
+        <view class="page__hd-pagetitle center">领读</view>
     </view>
-    <view class="weui-tab">
-        <view class="swiper-tab">
-            <view class="swiper-item {{activeIndex==0?'active':''}}" bindtap="changTab" data-index="0">领读</view>
-            <view class="swiper-item {{activeIndex==1?'active':''}}" bindtap="changTab" data-index="1">在读榜</view>
-            <view class="swiper-item {{activeIndex==2?'active':''}}" bindtap="changTab" data-index="2">新书榜</view>
+    <view class="page__bd">
+        <view class="page__bd-head">
+            <view class="head-img"><image class="pic" src="../../assets/images/headimg1.png"  mode="aspectFill"/></view>
+            <view class="artic-author page-flex">木木有光</view>
         </view>
-        <swiper current='{{activeIndex}}' bindChange="swiperTab">
-            <swiper-item>
-              <view class="swiper-tab-item weui-tab__content">领读</view>
-            </swiper-item>
-            <swiper-item>
-              <view class="swiper-tab-item weui-tab__content">在读榜</view>
-            </swiper-item>
-            <swiper-item>
-              <view class="swiper-tab-item weui-tab__content">新书榜</view>
-            </swiper-item>
-        </swiper>      
+        <view class="page__bd-banner center">
+            <image src="../../assets/images/banner1.jpg" alt="" mode="aspectFill"/>
+        </view>
+        <view class="page__bd-middle">
+            <view class="artic-title">当一个人总说“没问题”的时候，其实最有问题</view>
+            <view class="artic-content">根据老舍小说改编的《不成问题的问题》电影最近在上映，我还没有看过这部电影，但是小说看过很多收到货分散</view>
+        </view>
+        <view class="page__bd-foot">
+            <view class="foot-lt clickTimes fl page-flex">2221次点击</view>
+            <view class="foot-rt thumbUp">108
+                <view class="finger">
+                    <image src="../../assets/images/pointer.png"  mode="aspectFill" />
+                </view>
+            </view>
+        </view>
     </view>
-    <!-- <view class="page__bd center">
-       <view class="page__bd-items"></view>
-       <view class="page__bd-items"></view>
-       <view class="page__bd-items"></view>
-   </view> -->
+    <view class="page__bd">
+            <view class="page__bd-head">
+                <view class="head-img"><image class="pic" src="../../assets/images/headimg2.png"  mode="aspectFill"/></view>
+                <view class="artic-author page-flex">风陵渡</view>
+            </view>
+            <view class="page__bd-banner center">
+                <image src="../../assets/images/banner2.png" alt="" mode="aspectFill"/>
+            </view>
+            <view class="page__bd-middle">
+                <view class="artic-title">陈道明：世人多媚骨，唯有君如故！</view>
+                <view class="artic-content">根据老舍小说改编的《不成问题的问题》电影最近在上映，我还没有看过这部电影，但是小说看过很多收到货分散</view>
+            </view>
+            <view class="page__bd-foot">
+                <view class="foot-lt clickTimes fl page-flex">2221次点击</view>
+                <view class="foot-rt thumbUp">108
+                    <view class="finger">
+                        <image src="../../assets/images/pointer.png"  mode="aspectFill" />
+                    </view>
+                </view>
+            </view>
+        </view>
 </view>
