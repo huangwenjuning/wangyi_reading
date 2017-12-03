@@ -28,6 +28,7 @@
   width: 66rpx;
   height: 66rpx;
   line-height: 66rpx;
+  border-radius: 50%;
 }
 .artic-author {
   display: inline-block;
@@ -100,6 +101,6 @@
   position: absolute;
   right: 0;
   left: 0;
-  bottom: 228rpx;
+  bottom: 18rpx;
   border-top: 16rpx solid #F6F6F6;
 }
