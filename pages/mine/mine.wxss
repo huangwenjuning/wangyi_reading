@@ -1,1 +1,104 @@
 /* pages/mine/mine.wxss */
+
+.page__hd {
+    height: 516rpx;
+}
+
+.page__hd-tp {
+    text-align: right;
+    margin-right: 32rpx;
+    font-size: 34rpx;
+    color: #C2B282;
+}
+
+.page__hd-md image {
+    width: 164rpx;
+    height: 164rpx;
+    margin-bottom: 40rpx;
+}
+
+.page-username {
+    font-size: 36rpx;
+    color: #444;
+    margin-bottom: 72rpx;
+}
+
+
+/* .page-bt-lt:after {
+    content: "" ;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 375rpx;
+    border-bottom: 38rpx solid #000;
+} */
+
+.page-bt-lt,
+.page-bt-rt {
+    width: 375rpx;
+}
+
+.page-lt-readingtimes,
+.page-rt-numbers {
+    font-size: 34rpx;
+    color: #444;
+    text-align: center;
+}
+
+.page-lt-readingtime,
+.page-rt-items {
+    font-size: 24rpx;
+    color: #b3b3b3;
+    text-align: center;
+}
+
+.page-rg {
+    font-size: 34rpx;
+    color: #b3b3b3;
+    margin-right: 28rpx;
+}
+
+.page__hd:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 516rpx;
+    border-top: 18rpx solid #F6F6F6;
+}
+
+.page__bd {
+    margin-top: 40rpx;
+}
+.page__bd-items {
+    margin-bottom: 64rpx;
+}
+.page__bd image {
+    width: 40rpx;
+    height: 40rpx;
+}
+.page-items-lt, .page-items-md {
+    margin-left: 34rpx;
+}
+.page-items-lt {
+    margin-top: 6rpx;
+}
+.page-items-md {
+    width: 220rpx;
+    font-size: 34rpx;
+    color: #444;
+}
+
+.page-items-others {
+    text-align: right;
+    width: 352rpx;
+    font-size: 34rpx;
+    color: #b3b3b3;    
+}
+.page-items-ft {
+    width: 42rpx;
+    text-align: right;
+    color: #b3b3b3;    
+    font-size: 34rpx;
+    /* margin-left: 450rpx;   */
+}

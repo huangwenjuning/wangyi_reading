@@ -1,2 +1,81 @@
 <!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<view class="container">
+    <view class="page__hd">
+        <view class="page__hd-tp">编辑</view>
+        <view class="page__hd-md center">
+            <image src="../../assets/images/headimg1.png" />
+        </view>
+        <view class="page-username center">文君</view>
+        <view class="page__hd-bt page-flex">
+            <view class="page-bt-lt">
+                <view class="page-lt-readingtimes">5小时52分钟</view>
+                <view class="page-lt-readingtime">读书时长</view>
+            </view>
+            <view class="page-bt-rt">
+                <view class="page-rt-lt ">
+                    <view class="page-rt-numbers">5</view>
+                    <view class="page-rt-items">蜗牛壳</view>
+                </view>
+            </view>
+            <view class="page-rg">></view>
+        </view>
+    </view>
+    <view class="page__bd">
+        <view class="page__bd-items page-flex">
+            <view class="page-items-lt">
+                <image src="../../assets/images/mines/news.png" />
+            </view>
+            <view class="page-items-md">我的消息</view>
+            <view class="page-items-others"></view>
+            <view class="page-items-ft">></view>
+        </view>
+        <view class="page__bd-items page-flex">
+            <view class="page-items-lt">
+                <image src="../../assets/images/mines/booklist.png" />
+            </view>
+            <view class="page-items-md">我的书单·书评</view>
+            <view class="page-items-others">写书评</view>
+            <view class="page-items-ft">></view>
+        </view>
+        <view class="page__bd-items page-flex">
+            <view class="page-items-lt">
+                <image src="../../assets/images/mines/note.png" />
+            </view>
+            <view class="page-items-md">我的笔记</view>
+            <view class="page-items-others">8</view>
+            <view class="page-items-ft">></view>
+        </view>
+        <view class="page__bd-items page-flex">
+            <view class="page-items-lt">
+                <image src="../../assets/images/mines/fans.png" />
+            </view>
+            <view class="page-items-md">关注·粉丝</view>
+            <view class="page-items-others"></view>
+            <view class="page-items-ft">></view>
+        </view>
+        <view class="page__bd-items page-flex">
+            <view class="page-items-lt">
+                <image src="../../assets/images/mines/times.png" />
+            </view>
+            <view class="page-items-md">购买时长</view>
+            <view class="page-items-others"></view>
+            <view class="page-items-ft">></view>
+        </view>
+        <view class="page__bd-items page-flex">
+            <view class="page-items-lt">
+                <image src="../../assets/images/mines/update.png" />
+            </view>
+            <view class="page-items-md">更新续订</view>
+            <view class="page-items-others">点我找回阅读时长</view>
+            <view class="page-items-ft">></view>
+        </view>
+        <view class="page__bd-items page-flex">
+            <view class="page-items-lt">
+                <image src="../../assets/images/mines/sets.png" />
+            </view>
+            <view class="page-items-md">设置</view>
+            <view class="page-items-others"></view>
+            <view class="page-items-ft">></view>
+        </view>
+    </view>
+</view>
