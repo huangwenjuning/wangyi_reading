@@ -53,21 +53,23 @@
 .page__bd-middle .artic-title, .page__bd-middle .artic-content {
   margin-left: 34rpx;
 }
+.page__bd-middle .artic-title, .page__bd-middle .artic-content {
+  overflow: hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box; 
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+} 
 .page__bd-middle .artic-title {
   margin-top: 32rpx;
   margin-bottom: 32rpx;
   font-size: 44rpx;
   color: #444;
   font-weight: bold;
+ 
 }
 .page__bd-middle .artic-content {
   font-size: 32rpx;
-  overflow: hidden;
-  text-overflow:ellipsis;
-  display:-webkit-box; 
-  -webkit-box-orient:vertical;
-  -webkit-line-clamp:2; 
-  /* white-space:nowrap; */
   color: #7F7F7F;
   margin-bottom: 28rpx;
 }
