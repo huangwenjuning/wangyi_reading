@@ -1,0 +1,14 @@
+<view class="container">
+    <navigator url="../booklist/booklist">
+       <scroll-view scroll-y="true">
+        <view class="page page-flex" wx:for="{{types}}" wx:key="{{index}}" >
+            <view class="page__hd center">
+                <image src="{{item.bookCover}}"/></view>
+            <view class="page__bd">
+                <view class="page__bd-types">{{item.bookTypes}}</view>
+                <view class="page__bd-instruction">{{item.typeInstruction}}</view>
+            </view>
+        </view>
+    </scroll-view>
+    </navigator>   
+</view>
