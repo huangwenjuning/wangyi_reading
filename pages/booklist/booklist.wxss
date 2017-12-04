@@ -1,0 +1,43 @@
+/* booklist.wxss */
+
+.book-list-root{
+  display: flex;
+  flex-direction: row;
+  padding: 10rpx 20rpx;
+}
+
+.book-list-image{
+  width: 248rpx;
+  height: 224rpx;
+  flex: 1;
+  border-radius: 5%;
+}
+.book-list-child{
+  flex: 3;
+}
+.book-list-name{
+  font-size: 32rpx;
+  color: #444;
+  margin-left: 18rpx;
+}
+.book-list-autor{
+  font-size: 26rpx;
+  color: #222;
+  margin-left: 8rpx;
+}
+.book-list-des{
+  font-size: 24rpx;
+  color: #9c9a9c;
+  margin-left: 12rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box; 
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:3;
+}
+.line{
+  width: 100%;
+  height: 1rpx;
+  background-color: #efefef;
+  display: block;
+}

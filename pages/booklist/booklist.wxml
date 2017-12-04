@@ -1,0 +1,23 @@
+<!--booklist.wxml-->
+<view>
+    <view>
+        <scroll-view wx:for="{{bookList}}" wx:key="{{index}}" scroll-y="true">
+            <!-- <view class="typeInstruction">{{item.typeInstruction}}</view> -->
+            <navigator class="book-list-root" url="../bookdetail/bookdetail">
+                <image src="{{item.bookCover}}" class="book-list-image"></image>
+                <view class="book-list-child">
+                    <view>
+                        <text class="book-list-name">{{item.bookName}}</text>
+                    </view>
+                    <view>
+                        <text class="book-list-autor">{{item.authorName}}</text>
+                    </view>
+                    <view class="book-list-des">
+                        <text>{{item.bookDes}}</text>
+                    </view>
+                </view>
+            </navigator>
+            <view class="line"></view>
+        </scroll-view>
+    </view>
+</view>
