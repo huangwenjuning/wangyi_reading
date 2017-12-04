@@ -1,9 +1,15 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/libraries/libraries",
+    
+    "pages/bookDetail/bookDetail",
+    "pages/booklist/booklist",
+    "pages/stack/stack",
+    "pages/bookdesk/bookdesk",
+    "pages/stories/stories",
+    "pages/authors/authors",
     "pages/mine/mine",
+    "pages/logs/logs",
     "pages/common/list"
   ],
   "window":{
@@ -20,15 +26,21 @@
     "list": [
       {
         "pagePath":"pages/index/index",
-        "iconPath": "assets/icons/index.png",
-        "selectedIconPath": "assets/icons/index_sel.png",
-        "text":"首页"
+        "iconPath": "assets/icons/lingdu.png",
+        "selectedIconPath": "assets/icons/lingdu_sel.png",
+        "text":"领读"
       },
       {
-        "pagePath":"pages/libraries/libraries",
-        "iconPath": "assets/icons/libraries.png",
-        "selectedIconPath": "assets/icons/libraries_sel.png",
-        "text":"书库"
+        "pagePath":"pages/stack/stack",
+        "iconPath": "assets/icons/fenlei.png",
+        "selectedIconPath": "assets/icons/fenlei_sel.png",
+        "text":"分类"
+      },
+      {
+        "pagePath": "pages/bookdesk/bookdesk",
+        "iconPath": "assets/icons/bookdesk.png",
+        "selectedIconPath": "assets/icons/bookdesk_sel.png",
+        "text":"书桌"
       },
       {
         "pagePath":"pages/mine/mine",

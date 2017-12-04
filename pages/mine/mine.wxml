@@ -3,7 +3,7 @@
     <view class="page__hd">
         <view class="page__hd-tp">编辑</view>
         <view class="page__hd-md center">
-            <image src="../../assets/images/headimg1.png" />
+            <image src="../../assets/images/headImage.jpg" />
         </view>
         <view class="page-username center">文君</view>
         <view class="page__hd-bt page-flex">

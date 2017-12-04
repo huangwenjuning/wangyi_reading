@@ -1,4 +1,4 @@
-// pages/libraries/libraries.js
+// pages/bookDetail/bookDetail.js
 Page({
 
   /**

@@ -1,4 +1,4 @@
-// pages/common/list.js
+// pages/stories/stories.js
 Page({
 
   /**

@@ -15,6 +15,7 @@
     width: 164rpx;
     height: 164rpx;
     margin-bottom: 40rpx;
+    border-radius: 50%;
 }
 
 .page-username {
