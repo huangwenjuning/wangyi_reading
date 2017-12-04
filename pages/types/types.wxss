@@ -1,0 +1,39 @@
+.page__hd, .page__bd {
+  margin-top: 34rpx;
+}
+.page__hd image {
+  margin-left: 30rpx;
+  margin-right: 26rpx;
+  width: 156rpx;
+  height: 116rpx;
+  border-radius: 5rpx;
+}
+.page__bd {
+ /* transform: translate(220rpx, -124rpx); */
+ margin-right: 36rpx;
+}
+.page__bd-types {
+  font-size: 36rpx;
+  color: #222;
+}
+.page__bd-instruction {
+  font-size: 28rpx;
+  color: #999;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box; 
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+}
+.page__bd:after {
+    content: "";
+    position: absolute;
+    top: 190rpx;
+    left: 0;
+    right: 0;
+    border-top: 1rpx solid #F6F6F6;
+}
+.page__bt {
+  height: 1rpx;
+  background-color: #fff;
+}
