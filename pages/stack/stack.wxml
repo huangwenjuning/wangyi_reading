@@ -1,0 +1,13 @@
+
+<view>
+    <view>
+        <scroll-view wx:for="{{stackList}}" wx:key="{{index}}" scroll-y="true">
+            <navigator class="stack-view " url="../booklist/booklist">
+                <image src="{{item.typeCover}}" class="stack-image"></image>
+                <text class="stack-name">{{item.bookTypes}}</text>
+                <text class="stack-numb">{{item.bookNumb}} ></text>
+            </navigator>
+            <view class="line"></view>
+        </scroll-view>
+    </view>
+</view>
