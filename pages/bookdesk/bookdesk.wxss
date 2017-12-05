@@ -1,0 +1,27 @@
+.page__hd {
+    position: relative;
+}
+.page__hd-mm {
+    font-size: 38rpx;
+    color: #444;
+    line-height: 38rpx;
+    font-family: bold;
+}
+.page__hd-dd {
+    font-size: 24rpx;
+    color:#B3B3B3;
+    margin-left: 14rpx;
+}
+.page__hd .page__hd-xiala image{
+    width: 18rpx;
+    height: 18rpx;
+    margin-left: 16rpx;
+    margin-bottom: 6rpx;
+}
+.page__hd .page__hd-desk image {
+    position: absolute;
+    width: 60rpx;
+    height: 60rpx;
+    margin-top: -32rpx;
+    margin-left: 232rpx;
+}

@@ -1,5 +1,14 @@
 <view class="container">
-    <view class="page__hd"></view>
+    <view class="page__hd center">
+        <view class="page__hd-mm">60</view>
+        <text class="page__hd-dd">分钟</text>
+        <view class="page__hd-xiala">
+            <image class="xiala" src="../../assets/images/xiala.png" />
+        </view>
+        <view class="page__hd-desk">
+            <image class="desk" src="../../assets/images/desk.png" />
+        </view>
+    </view>
     <view class="page__bd"></view>
     <view class="page__bt"></view>
 </view>
