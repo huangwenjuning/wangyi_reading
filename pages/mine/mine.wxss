@@ -85,19 +85,19 @@
     margin-top: 6rpx;
 }
 .page-items-md {
-    width: 220rpx;
+    width: 222rpx;
     font-size: 34rpx;
     color: #444;
 }
 
 .page-items-others {
     text-align: right;
-    width: 352rpx;
+    width: 351rpx;
     font-size: 34rpx;
     color: #b3b3b3;    
 }
 .page-items-ft {
-    width: 42rpx;
+    width: 41rpx;
     text-align: right;
     color: #b3b3b3;    
     font-size: 34rpx;

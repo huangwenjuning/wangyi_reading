@@ -1,8 +1,8 @@
 
 <view>
     <view>
-        <scroll-view wx:for="{{stackList}}" wx:key="{{index}}" scroll-y="true">
-            <navigator class="stack-view " url="../booklist/booklist">
+        <scroll-view wx:for="{{type}}" wx:key="{{index}}" scroll-y="true">
+            <navigator class="stack-view " url="../booklist/booklist?id={{index}}">
                 <image src="{{item.typeCover}}" class="stack-image"></image>
                 <text class="stack-name">{{item.bookTypes}}</text>
                 <text class="stack-numb">{{item.bookNumb}} ></text>

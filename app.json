@@ -1,16 +1,16 @@
 {
   "pages":[
-    "pages/index/index",
-    
-    "pages/bookDetail/bookDetail",
-    "pages/booklist/booklist",
-    "pages/stack/stack",
+      
     "pages/bookdesk/bookdesk",
+    "pages/bookDetail/bookDetail",
+    
+    "pages/stack/stack",
+    "pages/booklist/booklist",
+    "pages/index/index",    
     "pages/stories/stories",
     "pages/authors/authors",
     "pages/mine/mine",
-    "pages/logs/logs",
-    "pages/common/list"
+    "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -20,7 +20,7 @@
   },
   "tabBar":{
     "color":"#999999",
-    "selectedColor":"#F788AB",
+    "selectedColor":"#444444",
     "backgroungColor":"#ffffff",
     "borderStyle":"#e0e0e0",
     "list": [
@@ -32,8 +32,8 @@
       },
       {
         "pagePath":"pages/stack/stack",
-        "iconPath": "assets/icons/fenlei.png",
-        "selectedIconPath": "assets/icons/fenlei_sel.png",
+        "iconPath": "assets/icons/stack.png",
+        "selectedIconPath": "assets/icons/stack_sel.png",
         "text":"分类"
       },
       {

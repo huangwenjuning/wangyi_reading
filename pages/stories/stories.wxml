@@ -1,6 +1,8 @@
 <!--pages/stories/stories.wxml-->
 <view class="container">
-    <view class="page__hd">永远，永远，永远都不要让任何人来贬低你</view>
+    <view class="page__hd">
+        永远，永远，永远都不要让任何人来贬低你
+    </view>
     <view class="page__bd"></view>
     <view class="page__bt"></view>
 </view>

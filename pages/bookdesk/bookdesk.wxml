@@ -1,4 +1,5 @@
 <view class="container">
+    <!-- 头部 时间显示 -->
     <view class="page__hd center">
         <view class="page__hd-mm">60</view>
         <text class="page__hd-dd">分钟</text>
@@ -9,6 +10,50 @@
             <image class="desk" src="../../assets/images/desk.png" />
         </view>
     </view>
-    <view class="page__bd"></view>
-    <view class="page__bt"></view>
+
+    <!-- 书籍轮播 -->
+    <swiper class="swiper" indicator-dots="true" interval="5000" duration="1000">
+        <swiper-item>
+            <view class="page__bd">
+                <view class="page__bd-books center">
+                    <image src="../../assets/images/book1.png" />
+                </view>
+                <view class="page__bt">
+                    <view class="page__bt-readings">南风知我意</view>
+                    <view class="page__bt-items center">
+                        <view>1186人在读</view>
+                        <image src="../../assets/images/rg.png" />
+                    </view>
+                </view>
+            </view>
+        </swiper-item>
+        <swiper-item>
+                <view class="page__bd">
+                    <view class="page__bd-books center">
+                        <image src="../../assets/images/book2.png" />
+                    </view>
+                    <view class="page__bt">
+                        <view class="page__bt-readings">人工智能</view>
+                        <view class="page__bt-items center">
+                            <view>1193人在读</view>
+                            <image src="../../assets/images/rg.png" />
+                        </view>
+                    </view>
+                </view>
+            </swiper-item>
+            <swiper-item>
+                    <view class="page__bd">
+                        <view class="page__bd-books center">
+                            <image src="../../assets/images/book3.png" />
+                        </view>
+                        <view class="page__bt">
+                            <view class="page__bt-readings">编写高质量代码：改善JavaScript程序的</view>
+                            <view class="page__bt-items center">
+                                <view>86人在读</view>
+                                <image src="../../assets/images/rg.png" />
+                            </view>
+                        </view>
+                    </view>
+                </swiper-item>
+    </swiper>
 </view>

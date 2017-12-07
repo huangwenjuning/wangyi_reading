@@ -1,2 +1,3 @@
-<!--pages/bookDetail/bookDetail.wxml-->
-<text>pages/bookDetail/bookDetail.wxml</text>
+<view class="img">
+    <image src="https://www.kinokuniya.co.jp/images/goods/ar2/web/imgdata2/large/40877/4087746682.jpg" />
+</view>

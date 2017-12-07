@@ -1,3 +1,4 @@
+
 .page__hd {
     position: relative;
 }
@@ -24,4 +25,43 @@
     height: 60rpx;
     margin-top: -32rpx;
     margin-left: 232rpx;
+}
+.page__bd {
+}
+.swiper {
+    margin-left: 168rpx;
+    width: 416rpx;
+    height: 960rpx;
+}
+.page__bd-books image {
+    margin-top: 116rpx;
+    width: 416rpx;
+    height: 582rpx;
+    border-radius: 8rpx;
+}
+.page__bt-readings {
+    margin-top: 80rpx;
+    font-size: 38rpx;
+    color: #444;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    
+    
+    display:-webkit-box; 
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:1; 
+}
+.page__bt-items {
+    margin-top: 42rpx;
+}
+.page__bt-items>view {
+    font-size: 26rpx;
+    color: #B3B3B3;
+}
+.page__bt-items image {
+    width: 24rpx;
+    height: 24rpx;
+    margin-left: 16rpx;
 }
