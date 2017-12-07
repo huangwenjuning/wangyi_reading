@@ -3,7 +3,7 @@
     <view>
         <scroll-view wx:for="{{bookList}}" wx:key="{{index}}" scroll-y="true">
             <!-- <view class="typeInstruction">{{item.typeInstruction}}</view> -->
-            <navigator class="book-list-root" url="../bookdetail/bookdetail">
+            <navigator class="book-list-root" url="../bookDetail/bookDetail">
                 <image src="{{item.bookCover}}" class="book-list-image"></image>
                 <view class="book-list-child">
                     <view>
