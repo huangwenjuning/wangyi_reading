@@ -4,5 +4,5 @@
 }
 .start image {
   width: 750rpx;
-  height: 1060rpx;
+  height: 1060rpx; 
 }
