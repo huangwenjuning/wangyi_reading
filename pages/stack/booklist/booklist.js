@@ -2,8 +2,7 @@
 Page({
   data: {
     bookList:[],
-    stack:[],
-    item: []
+    stack:[]
   },
   bindViewTap: function() {
     wx.navigateTo({

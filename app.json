@@ -1,16 +1,16 @@
 {
   "pages":[
+    "pages/index/index",   
+    "pages/leader/stories/stories", 
+    "pages/leader/leader",    
+    "pages/leader/authors/authors",    
     "pages/mine/mine",
     "pages/mine/news/news",    
-    "pages/leader/leader",
     "pages/bookdesk/bookdesk",
     "pages/stack/stack",
     "pages/stack/booklist/booklist",
     "pages/stack/booklist/bookdetail/bookdetail",
-    "pages/leader/stories/stories",
-    "pages/leader/authors/authors",
-    "pages/logs/logs",
-    "pages/index/index"
+    "pages/logs/logs"
     
   ],
   "window":{

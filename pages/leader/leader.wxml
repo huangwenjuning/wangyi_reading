@@ -3,7 +3,7 @@
         <view class="page__hd-pagetitle center">领读</view>
     </view>
         <scroll-view class="page__bd" wx:for="{{authors}}" wx:key="{{index}}" scroll-y="true">
-            <navigator url="../authors/authors" hover-class="none">
+            <navigator url="authors/authors" hover-class="none">
             <view class="page__bd-head">
                 <view class="head-img">
                     <image class="pic" src="{{item.headImg}}" mode="aspectFill" />
@@ -11,7 +11,7 @@
                 <view class="artic-author page-flex">{{item.userName}}</view>
             </view>
         </navigator>
-            <navigator url="stories/stories">
+            <navigator url="stories/stories?id={{index}}">
             <view class="page__bd-banner center">
                 <image class="bannerImg" src="{{item.bannerImg}}" alt="" mode="aspectFill" />
             </view>
