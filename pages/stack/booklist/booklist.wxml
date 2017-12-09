@@ -1,9 +1,9 @@
 <!--booklist.wxml-->
 <view>
     <view>
-        <scroll-view wx:for="{{bookList}}" wx:key="{{index}}" scroll-y="true">
+        <view wx:for="{{bookList}}" wx:key="{{index}}">
             <!-- <view class="typeInstruction">{{item.typeInstruction}}</view> -->
-            <navigator class="book-list-root" url="../bookDetail/bookDetail">
+            <view class="book-list-root" bindtap="bindViewTap">
                 <image src="{{item.bookCover}}" class="book-list-image"></image>
                 <view class="book-list-child">
                     <view>
@@ -16,8 +16,8 @@
                         <text>{{item.bookDes}}</text>
                     </view>
                 </view>
-            </navigator>
-            <view class="line"></view>
-        </scroll-view>
+            </view>
+            <view class="line"></view>            
+        </view>
     </view>
 </view>

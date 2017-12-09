@@ -1,32 +1,3 @@
 <view class="container">
-    <view class="page__hd">
-        <view class="page__hd-pagetitle center">领读</view>
-    </view>
-        <scroll-view class="page__bd" wx:for="{{authors}}" wx:key="{{index}}" scroll-y="true">
-            <navigator url="../authors/authors" hover-class="none">
-            <view class="page__bd-head">
-                <view class="head-img">
-                    <image class="pic" src="{{item.headImg}}" mode="aspectFill" />
-                </view>
-                <view class="artic-author page-flex">{{item.userName}}</view>
-            </view>
-        </navigator>
-            <navigator url="../stories/stories">
-            <view class="page__bd-banner center">
-                <image class="bannerImg" src="{{item.bannerImg}}" alt="" mode="aspectFill" />
-            </view>
-            <view class="page__bd-middle">
-                <view class="artic-title">{{item.articTitle}}</view>
-                <view class="artic-content">{{item.articContent}}</view>
-            </view>
-            <view class="page__bd-foot">
-                <view class="foot-lt clickTimes fl page-flex">{{item.clickTimes}}次点击</view>
-                <view class="foot-rt thumbUp">{{item.thumbUp}}
-                    <view class="finger">
-                        <image src="../../assets/images/pointer.png" mode="aspectFill" />
-                    </view>
-                </view>
-            </view>
-        </navigator>
-    </scroll-view>
+    <view class="start"><image src="../../assets/images/start.jpg" /></view> 
 </view>

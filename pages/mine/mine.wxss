@@ -38,12 +38,16 @@
 .page-bt-rt {
     width: 375rpx;
 }
-
+.cline {
+    margin-left: 80rpx;
+    color: #999;
+}
 .page-lt-readingtimes,
 .page-rt-numbers {
     font-size: 34rpx;
     color: #444;
     text-align: center;
+    margin-left: 60rpx;
 }
 
 .page-lt-readingtime,
@@ -51,6 +55,7 @@
     font-size: 24rpx;
     color: #b3b3b3;
     text-align: center;
+    margin-left: 60rpx;
 }
 
 .page-rg {

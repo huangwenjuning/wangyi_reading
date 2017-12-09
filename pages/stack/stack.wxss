@@ -35,8 +35,5 @@
   line-height: 160rpx;
 }
 .line{
-  width: 100%;
-  height: 1rpx;
-  background-color: #efefef;
-  display: block;
+  border-bottom: 1rpx solid #F0F0F0;
 }

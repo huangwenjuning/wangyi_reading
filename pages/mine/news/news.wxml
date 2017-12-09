@@ -1,0 +1,17 @@
+<!--pages/mine/news/news.wxml-->
+<view class="container">
+    <view class="page-line"></view>
+    <view wx:for="{{news}}" wx:key="{{index}}">
+        <view class="page-items page-flex">
+            <view class="page__lt">
+                <image src="{{item.userImg}}" />
+            </view>
+            <view class="page__md">
+                <view class="page__md-users">{{item.user}}
+                    <view class="page__md-time">{{item.time}}</view>
+                </view>
+                <view class="page__md-news">{{item.news}}</view>
+            </view>
+        </view>
+    </view>
+</view>

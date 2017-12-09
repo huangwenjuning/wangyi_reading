@@ -1,0 +1,106 @@
+/**index.wxss**/
+.page__hd {
+    width: 100%;
+    height: 100rpx;
+    background: #ffffff;
+  }
+  .page__hd:before {
+    content: "";
+    position: absolute;
+    top: 80rpx;
+    left: 0;
+    right: 0;
+    border-top: 1rpx solid #F6F6F6;
+  }
+  .page__hd-pagetitle {
+    font-size: 36rpx;
+    font-weight: bold;
+    color: #444;
+  }
+  .page__bd {
+  }
+  .page__bd-head {
+    height: 128rpx;
+    margin-left: 30rpx;
+    display: flex;
+  }
+  .page__bd-head image {
+    width: 66rpx;
+    height: 66rpx;
+    line-height: 66rpx;
+    border-radius: 50%;
+  }
+  .artic-author {
+    display: inline-block;
+    margin-top: 8rpx;
+    /* margin-bottom: 40rpx; */
+    /* line-height: 28rpx; */
+    margin-left: 28rpx; 
+    font-size: 28rpx; 
+    color:#444;
+  }
+  .page__bd-banner {
+   
+  }
+  .page__bd-banner image {
+    margin-top: -46rpx;
+    width: 688rpx;
+    height: 302rpx;
+    border-radius: 15rpx;
+  }
+  .page__bd-middle {
+    width: 688rpx;
+  }
+  .page__bd-middle .artic-title, .page__bd-middle .artic-content {
+    margin-left: 34rpx;
+  }
+  .page__bd-middle .artic-title, .page__bd-middle .artic-content {
+    overflow: hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box; 
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+  } 
+  .page__bd-middle .artic-title {
+    margin-top: 32rpx;
+    margin-bottom: 32rpx;
+    font-size: 44rpx;
+    color: #444;
+    font-weight: bold;
+   
+  }
+  .page__bd-middle .artic-content {
+    font-size: 32rpx;
+    color: #7F7F7F;
+    margin-bottom: 28rpx;
+  }
+  .page__bd-foot {
+    height: 92rpx;
+  }
+  .page__bd-foot .foot-lt, .page__bd-foot .foot-rt {
+    color: #C6C6C6;
+    font-size: 28rpx;
+  }
+  .page__bd-foot .foot-lt {
+    margin-left: 34rpx;  
+  }
+  .page__bd-foot .foot-rt {
+    text-align: right;
+    margin-right: 72rpx;
+  }
+  .foot-rt .finger {
+  
+  }
+  .finger image {
+    width: 28rpx;
+    height: 28rpx;
+    transform: translate(44rpx, -42rpx);
+  }
+  .page__bd-foot:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 18rpx;
+    border-top: 16rpx solid #F6F6F6;
+  }

@@ -11,6 +11,7 @@
                 <view class="page-lt-readingtimes">5小时52分钟</view>
                 <view class="page-lt-readingtime">读书时长</view>
             </view>
+            <view class="cline">|</view>
             <view class="page-bt-rt">
                 <view class="page-rt-lt ">
                     <view class="page-rt-numbers">5</view>
@@ -21,7 +22,7 @@
         </view>
     </view>
     <view class="page__bd">
-        <view class="page__bd-items page-flex">
+        <view class="page__bd-items page-flex" bindtap="tomyNews">
             <view class="page-items-lt">
                 <image src="../../assets/images/mines/news.png" />
             </view>

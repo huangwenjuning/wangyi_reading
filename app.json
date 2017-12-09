@@ -1,16 +1,17 @@
 {
   "pages":[
-      
-    "pages/bookdesk/bookdesk",
-    "pages/bookDetail/bookDetail",
-    
-    "pages/stack/stack",
-    "pages/booklist/booklist",
-    "pages/index/index",    
-    "pages/stories/stories",
-    "pages/authors/authors",
     "pages/mine/mine",
-    "pages/logs/logs"
+    "pages/mine/news/news",    
+    "pages/leader/leader",
+    "pages/bookdesk/bookdesk",
+    "pages/stack/stack",
+    "pages/stack/booklist/booklist",
+    "pages/stack/booklist/bookdetail/bookdetail",
+    "pages/leader/stories/stories",
+    "pages/leader/authors/authors",
+    "pages/logs/logs",
+    "pages/index/index"
+    
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -25,7 +26,7 @@
     "borderStyle":"#e0e0e0",
     "list": [
       {
-        "pagePath":"pages/index/index",
+        "pagePath":"pages/leader/leader",
         "iconPath": "assets/icons/lingdu.png",
         "selectedIconPath": "assets/icons/lingdu_sel.png",
         "text":"领读"

@@ -1,23 +1,23 @@
-//index.js
-//获取应用实例
 const app = getApp()
 
 Page({
   data: {
-    authors:[],
+    time:3
   },
-  onLoad: function() {
-    var that = this;
-    wx.request({
-      url: 'https://www.easy-mock.com/mock/5a23a9a2ff38a436c591b6fa/getArticInfo',
-      success: function(res) {
-        console.log(res.data.data.index);
-        that.setData({
-            authors: res.data.data.index,
-
+  onLoad: function () {
+    var count = setInterval(()=>{
+      
+      this.setData({
+        time : this.data.time -1
+      });
+      if(this.data.time == 0) {
+        wx.switchTab({
+          url:'../leader/leader',
+          complete:function(res) {
+          }
         })
+        clearInterval(count);
       }
-    })
+    },1000);
   }
-
 })
