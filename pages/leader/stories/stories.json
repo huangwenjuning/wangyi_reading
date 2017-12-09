@@ -1,1 +1,5 @@
-{}
+{
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "书评正文",
+    "navigationBarTextStyle": "black"
+}
