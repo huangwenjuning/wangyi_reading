@@ -182,7 +182,7 @@ stack.js
           onLoad: function () {
               var that = this;
                 wx.request({
-                  url:'https://www.easy-mock.com/mock/5a23a9a2ff38a436c591b6fa/getArticInfo',
+                  url:"https://www.easy-mock.com/mock/5a23a9a2ff38a436c591b6fa/getArticInfo",
                   success: function(res) {
                     console.log(res.data.data.stack);
                     console.log(res.data.data.List);              
@@ -338,8 +338,7 @@ navigator的跳转能够保留当前页面，可返回
 
 另外，其实还有很多功能和细节没有处理好，这一次的分享并不代表着结束，通过不断的学习，还将不断的对项目功能进行完善和处理各种细节。
 
-项目地址：Hwj1220/wangyi_reading
-------------
+
             
             ☝想要一个star哦☺
 
