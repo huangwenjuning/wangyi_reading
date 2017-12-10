@@ -205,27 +205,27 @@ booklist:
 
 booklist.wxml
 　
-	     <view>
-		  <view>
-		      <view wx:for="{{bookList}}" wx:key="{{index}}">
-			  <view class="book-list-root" bindtap="bindViewTap">
-			      <image src="{{item.bookCover}}" class="book-list-image"></image>
-			      <view class="book-list-child">
-				  <view>
-				      <text class="book-list-name">{{item.bookName}}</text>
+		     <view>
+			  <view>
+			      <view wx:for="{{bookList}}" wx:key="{{index}}">
+				  <view class="book-list-root" bindtap="bindViewTap">
+				      <image src="{{item.bookCover}}" class="book-list-image"></image>
+				      <view class="book-list-child">
+					  <view>
+					      <text class="book-list-name">{{item.bookName}}</text>
+					  </view>
+					  <view>
+					      <text class="book-list-autor">{{item.authorName}}</text>
+					  </view>
+					  <view class="book-list-des">
+					      <text>{{item.bookDes}}</text>
+					  </view>
+				      </view>
 				  </view>
-				  <view>
-				      <text class="book-list-autor">{{item.authorName}}</text>
-				  </view>
-				  <view class="book-list-des">
-				      <text>{{item.bookDes}}</text>
-				  </view>
+				  <view class="line"></view>            
 			      </view>
 			  </view>
-			  <view class="line"></view>            
 		      </view>
-		  </view>
-	      </view>
 
 booklist.js
 
@@ -246,7 +246,7 @@ booklist.js
 		      })
 		      },
 		  })
-	  ```
+	  
 ### 3、对navigationBarTitleText的动态修改
 
 ![img](https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/data3.gif) 
