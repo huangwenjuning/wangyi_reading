@@ -178,7 +178,7 @@ stack.wxml
 
 stack.js
 
-```
+
 	      Page({
 		  data: {
 		    stack:[],
@@ -199,12 +199,12 @@ stack.js
 			})
 		      },   
 		})
-	```
+	
 	
 booklist:
 booklist.wxml
 　
-	     ```<view>
+	     <view>
 		  <view>
 		      <view wx:for="{{bookList}}" wx:key="{{index}}">
 			  <view class="book-list-root" bindtap="bindViewTap">
@@ -225,10 +225,10 @@ booklist.wxml
 		      </view>
 		  </view>
 	      </view>
-```
+
 booklist.js
 
-	       ``` Page({
+	        Page({
 		  data: {
 		      bookList:[],
 		      stack:[]
@@ -296,7 +296,7 @@ navigator的跳转能够保留当前页面，可返回
 		    url:'news/news'
 		  })
 		},
-```
+
 需要注意的是：程序中要求页面的层级最多只能有五层，因为这种方式保留当前页面，也就是说以这种方式跳转页面，最多只能打开5个页面。
 #### （2）使用 switchTab 方法
 
