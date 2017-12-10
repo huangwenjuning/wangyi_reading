@@ -6,8 +6,9 @@
 项目地址：[杳杳飞花/Reading](https://github.com/Hwj1220/wangyi_reading)
 ------
 项目预览：
-![img](https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/reading.gif) 
 ------
+![img](https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/reading.gif) 
+
 
 项目准备：	
 ------
@@ -120,7 +121,7 @@ stack.wxml
 ### 1、小程序启动页面的实现
 在这里我使用了setInterval（）和clearInterval（）方法来实现，然后通过switchTab来实现跳转
 
-
+`
 	Page({
 	  data: {
 	    time:3
@@ -141,7 +142,7 @@ stack.wxml
 	    },1000);
 	  }
 	})
-
+`
 ### 2、跳转页面时获取id, 获取不同数据
 一开始自己对数据获取还不是很熟练，只能进行简单的单页面渲染。后来通过查文档和摸索，逐渐的能够进行复杂一些的数据获取。另外，在setData时，如果不清楚结构，可以使用console.log(); 方法及时的查看数据结构，一层层的剥开找到我们需要的数据层。
 为了更便于理解，附上两张动图展示，可以发现当我点击不同文章之后，跳转的页面获取的数据也不一样。
@@ -159,7 +160,7 @@ stack.wxml
 stack:
 
 stack.wxml
-      <view>
+  `    <view>
           <view>
               <view class="page-search"></view>
               <scroll-view wx:for="{{stack}}" wx:key="{{index}}" scroll-y="true">
@@ -172,9 +173,9 @@ stack.wxml
               </scroll-view>
           </view>
       </view>
-
+`
 stack.js
-
+`
       Page({
           data: {
             stack:[],
@@ -194,10 +195,10 @@ stack.js
                   }
                 })
               },   
-        })
+        })`
 booklist:
 booklist.wxml
-      <view>
+      `<view>
           <view>
               <view wx:for="{{bookList}}" wx:key="{{index}}">
                   <view class="book-list-root" bindtap="bindViewTap">
@@ -218,10 +219,10 @@ booklist.wxml
               </view>
           </view>
       </view>
-
+`
 booklist.js
 
-          Page({
+         ` Page({
           data: {
               bookList:[],
               stack:[]
@@ -237,7 +238,7 @@ booklist.js
                 }
               })
               },
-          })
+          })`
 ### 3、对navigationBarTitleText的动态修改
 
 ![img](https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/data3.gif) 
@@ -246,13 +247,13 @@ booklist.js
 
 另外要注意的是，我们要将JSON中的navigationBarTitleText设置为空，这样在跳转的过程中就不会有原始标题和修改标题之间跳转的一个效果，而是直接显示需要的标题。
 	
-      .json
+     ` .json
           {
               "navigationBarBackgroundColor": "#fff",
               "navigationBarTitleText": " ",
               "navigationBarTextStyle": "black"
-          }
-        .js
+          }`
+       ` .js
         onLoad: function (params) {
           var that = this;
             wx.request({
@@ -264,12 +265,12 @@ booklist.js
                 },1);
               }
             })
-          },
+          },`
 ### 4、两种页面跳转方式
 #### （1）使用 navigator 方式
 navigator的跳转能够保留当前页面，可返回
       
-      <navigator class="stack-view " url="booklist/booklist?id={{index}}">
+     ` <navigator class="stack-view " url="booklist/booklist?id={{index}}">
       //  点击部位，触发即可跳转
       </navigator>
       
@@ -287,16 +288,16 @@ navigator的跳转能够保留当前页面，可返回
             url:'news/news'
           })
         },
-
+`
 需要注意的是：程序中要求页面的层级最多只能有五层，因为这种方式保留当前页面，也就是说以这种方式跳转页面，最多只能打开5个页面。
 #### （2）使用 switchTab 方法
 
 该方法能够跳转到 tabBar 页面，并关闭其他所有非 tabBar 页面。
-        wx.switchTab({
+       ` wx.switchTab({
                   url:'../leader/leader',
                   complete:function(res) {
                   }
-                })
+                })`
 ### 5、swiper实现轮播
 通过 swiper 和 swiper-item 实现了书桌页面的轮播效果。
 
@@ -306,7 +307,7 @@ navigator的跳转能够保留当前页面，可返回
 
 ![img](https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/v2-37f8891696e8daf279bbfb8c1d73a421_hd.jpg) 
 
-	<swiper class="swiper" indicator-dots="true" 
+	`<swiper class="swiper" indicator-dots="true" 
 	interval="5000" duration="1000">
 	        <swiper-item>
 	            <view class="page__bd">
@@ -326,7 +327,7 @@ navigator的跳转能够保留当前页面，可返回
 	            </view>
 	        </swiper-item>
 	 </swiper>
-
+`
 其中，swiper-item 可以通过 wx:for 来循环。
 
 总结：
