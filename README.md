@@ -5,7 +5,8 @@
 
 项目地址：[杳杳飞花/Reading](https://github.com/Hwj1220/wangyi_reading)
 ------
-项目预览：![img](https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/reading.gif) 
+项目预览：
+![img](https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/reading.gif) 
 ------
 
 项目准备：	
@@ -89,9 +90,11 @@
     "pages/logs/logs" 
 	  ],
  
+
 ![img](https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/v2-985964c783e7bde42bdae79fb574b532_hd.jpg) 
 
 在分类页面下具有多层级的一个页面创建展示：
+
 ![img](https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/v2-19326db440843aa25b219e3fcbc8c63c_hd.jpg) 
 
 所以在项目开始时首先思考的就是文件的排版问题，一个合理的结构，能够增强项目的可读性，以后操作和维护也更加方便，能够节约一定的时间。
@@ -102,7 +105,9 @@
 
 其实第三方框架是非常好的轮子，像微信团队开发的 weui 框架就很好用，它提供了很多的组件，能够让你摆脱切页面的繁琐，减少开发时间。对于 weui 的使用我也不是很熟练，所以在后续的学习中，还会继续修改这个小程序，用不同的方法实现页面。
 另外，在命名时，我使用了BEM规范，这样便于对页面结构的理解，使代码更易读。BEM命名法则给我们提供了一个很好的模板，在命名中就能体现各个元素之间的关系，CSS的命名更加语义化，元素更易读懂。而且独一无二的命名方式，使得代码能够得到更好的复用。
+
 stack.wxml
+
 ![img](https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/v2-e9b0e7e2fc3e81b8c25c5b38cb9600d4_hd.jpg) 
 
 ### 3、使用 easy-mock 造数据
@@ -142,9 +147,11 @@ stack.wxml
 为了更便于理解，附上两张动图展示，可以发现当我点击不同文章之后，跳转的页面获取的数据也不一样。
 
 领读
+
 ![img](https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/data.gif) 
 
 分类
+
 ![img](https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/data2.gif) 
 
 在这里分类页面的数据更整齐一些，就以它为例来说一说我是如何通过id来动态选择数据的。首先要清楚的是stack分类页面和跳转到的booklist详情页。在这里是通过navigator来跳转的，我们在url中设置表达式来动态获取id，url="booklist/booklist?id={{index}}"，然后在 booklist.js 中，通过获取到的id，进行数据的选择。
@@ -222,7 +229,7 @@ booklist.js
           onLoad: function (params) {
             var that = this;
               wx.request({
-                url:'https://www.easy-mock.com/mock/5a23a9a2ff38a436c591b6fa/getArticInfo',
+                url:"https://www.easy-mock.com/mock/5a23a9a2ff38a436c591b6fa/getArticInfo",
                 success: function(res) {
                   that.setData({
                     bookList: res.data.data.stack[params.id].List.bookList,
@@ -232,6 +239,7 @@ booklist.js
               },
           })
 ### 3、对navigationBarTitleText的动态修改
+
 ![img](https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/data3.gif) 
 
 在各个页面的JSON文件中，我们能够设置页面的标题，但是当我们进入不同页面需要获取不同标题时，就需要动态的进行修改。其实实现起来很简单，我们知道通过wx.setNavigationBarTitle() 方法就能够修改页面标题，然后跟第二点所述的方式一样，通过id来达到动态获取的效果。
@@ -248,7 +256,7 @@ booklist.js
         onLoad: function (params) {
           var that = this;
             wx.request({
-              url:'https://www.easy-mock.com/mock/5a23a9a2ff38a436c591b6fa/getArticInfo',
+              url:"https://www.easy-mock.com/mock/5a23a9a2ff38a436c591b6fa/getArticInfo",
               success: function(res) {
                 var bTypes = res.data.data.stack[params.id].bookTypes;
                 wx.setNavigationBarTitle({ 
@@ -260,6 +268,7 @@ booklist.js
 ### 4、两种页面跳转方式
 #### （1）使用 navigator 方式
 navigator的跳转能够保留当前页面，可返回
+      
       <navigator class="stack-view " url="booklist/booklist?id={{index}}">
       //  点击部位，触发即可跳转
       </navigator>
@@ -290,6 +299,7 @@ navigator的跳转能够保留当前页面，可返回
                 })
 ### 5、swiper实现轮播
 通过 swiper 和 swiper-item 实现了书桌页面的轮播效果。
+
 ![img](https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/data4.gif) 
 
 这里的相关属性就直接使用了网上的图片：
