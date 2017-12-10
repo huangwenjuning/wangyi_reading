@@ -208,8 +208,7 @@ booklist.wxml
 		     <view>
 			  <view>
 			      <view wx:for="{{bookList}}" wx:key="{{index}}">
-				  <view class="book-list-root" bindtap="bindViewTap">
-				      
+				  <view class="book-list-root" bindtap="bindViewTap">  
 				      <view class="book-list-child">
 					  <view>
 					      <text class="book-list-name">{{item.bookName}}</text>
