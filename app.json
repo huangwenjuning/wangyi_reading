@@ -1,17 +1,16 @@
 {
   "pages":[
-    "pages/index/index",   
-    "pages/leader/stories/stories", 
+    "pages/index/index", 
     "pages/leader/leader",    
-    "pages/leader/authors/authors",    
+    "pages/leader/stories/stories", 
+    "pages/leader/authors/authors", 
+    "pages/stack/stack",
+    "pages/stack/booklist/booklist", 
+    "pages/stack/booklist/bookdetail/bookdetail",
+    "pages/bookdesk/bookdesk", 
     "pages/mine/mine",
     "pages/mine/news/news",    
-    "pages/bookdesk/bookdesk",
-    "pages/stack/stack",
-    "pages/stack/booklist/booklist",
-    "pages/stack/booklist/bookdetail/bookdetail",
-    "pages/logs/logs"
-    
+    "pages/logs/logs" 
   ],
   "window":{
     "backgroundTextStyle":"light",

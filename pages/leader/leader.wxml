@@ -10,7 +10,7 @@
                 </view>
                 <view class="artic-author page-flex">{{item.userName}}</view>
             </view>
-        </navigator>
+            </navigator>
             <navigator url="stories/stories?id={{index}}">
             <view class="page__bd-banner center">
                 <image class="bannerImg" src="{{item.bannerImg}}" alt="" mode="aspectFill" />

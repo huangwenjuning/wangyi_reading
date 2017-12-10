@@ -3,7 +3,6 @@ Page({
   data: {
     news: []
   },
-
   onLoad: function () {
    var that = this;
    wx.request({

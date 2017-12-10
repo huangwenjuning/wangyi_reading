@@ -5,8 +5,7 @@ Page({
     time:3
   },
   onLoad: function () {
-    var count = setInterval(()=>{
-      
+    var count = setInterval(()=>{   
       this.setData({
         time : this.data.time -1
       });
