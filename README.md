@@ -160,6 +160,7 @@ stack.wxml
 stack:
 
 stack.wxml
+
 ```    <view>
           <view>
               <view class="page-search"></view>
@@ -174,7 +175,9 @@ stack.wxml
           </view>
       </view>
 ```
+
 stack.js
+
 ```
       Page({
           data: {
@@ -197,9 +200,11 @@ stack.js
               },   
         })
 	```
+	
 booklist:
 booklist.wxml
-     ```<view>
+　
+     ```<view>
           <view>
               <view wx:for="{{bookList}}" wx:key="{{index}}">
                   <view class="book-list-root" bindtap="bindViewTap">
@@ -296,11 +301,13 @@ navigator的跳转能够保留当前页面，可返回
 #### （2）使用 switchTab 方法
 
 该方法能够跳转到 tabBar 页面，并关闭其他所有非 tabBar 页面。
+
        ``` wx.switchTab({
                   url:'../leader/leader',
                   complete:function(res) {
                   }
                 })```
+		
 ### 5、swiper实现轮播
 通过 swiper 和 swiper-item 实现了书桌页面的轮播效果。
 
@@ -310,7 +317,7 @@ navigator的跳转能够保留当前页面，可返回
 
 ![img](https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/v2-37f8891696e8daf279bbfb8c1d73a421_hd.jpg) 
 
-	```<swiper class="swiper" indicator-dots="true" 
+	<swiper class="swiper" indicator-dots="true" 
 	interval="5000" duration="1000">
 	        <swiper-item>
 	            <view class="page__bd">
@@ -330,7 +337,7 @@ navigator的跳转能够保留当前页面，可返回
 	            </view>
 	        </swiper-item>
 	 </swiper>
-```
+
 其中，swiper-item 可以通过 wx:for 来循环。
 
 总结：
