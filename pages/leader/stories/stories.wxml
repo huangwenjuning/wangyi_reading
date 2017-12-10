@@ -18,6 +18,7 @@
             </view>
         </view>
     </view>
+
     <view wx:for="{{article}}" wx:key="{{index}}">
         <view class="page__bd">
             <view class="article-content">
@@ -30,28 +31,27 @@
                 <image src="{{item.image2}}" />
             </view>
         </view>
-    </view>
-    <view class="tuijian">书籍推荐</view>
-    <view class="page-items page-flex">
-        
-        <view class="bookImg">
-            <image src="../../../../assets/images/headImage.jpg" />
-        </view>
-        <view class="info">帝国最后的荣耀
-            <view class="author">马伯庸
-                <view class="readers">105人在读 ></view>
+
+        <view class="tuijian">书籍推荐</view>
+        <view class="page-items page-flex">
+            <view class="bookImg">
+                <image src="{{item.bookCover}}" />
             </view>
+            <view class="info">{{item.bookName}}
+                <view class="author">{{item.bookAuthor}}
+                    <view class="readers">{{item.readerNum}}人在读 ></view>
+                </view>
+            </view>
+            <view class="readbtn">开始阅读</view>
         </view>
-        <view class="readbtn">开始阅读</view>
+        <view class="log page-flex">
+            <view class="updateTime">更新于{{item.updateTime}}</view>
+            <text>举报</text>
+        </view>
+        <view class="btnThumb">
+            <image src="../../../../assets/images/thumb.png" /> 用生命点赞
+        </view>
     </view>
-    <view class="log page-flex">
-        <view class="updateTime">更新于昨天21:18</view>
-        <text>举报</text>
-    </view>
-    <view class="btnThumb">
-        <image src="../../../../assets/images/thumb.png" />
-        用生命点赞
-    </view>    
     <!-- <view>10人点赞</view>   -->
     <view class="page__bt page-flex">
         <view class="bottom-items">
