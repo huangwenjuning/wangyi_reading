@@ -209,7 +209,7 @@ booklist.wxml
 			  <view>
 			      <view wx:for="{{bookList}}" wx:key="{{index}}">
 				  <view class="book-list-root" bindtap="bindViewTap">
-				      <image src="{{item.bookCover}}" class="book-list-image"></image>
+				      
 				      <view class="book-list-child">
 					  <view>
 					      <text class="book-list-name">{{item.bookName}}</text>
