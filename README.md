@@ -179,72 +179,72 @@ stack.wxml
 stack.js
 
 ```
-      Page({
-          data: {
-            stack:[],
-            id: ""
-          }, 
-          onLoad: function () {
-              var that = this;
-                wx.request({
-                  url:"https://www.easy-mock.com/mock/5a23a9a2ff38a436c591b6fa/getArticInfo",
-                  success: function(res) {
-                    console.log(res.data.data.stack);
-                    console.log(res.data.data.List);              
-                    that.setData({
-                      stack: res.data.data.stack,
-                      id: res.data.data.List
-                    })
-                  }
-                })
-              },   
-        })
+	      Page({
+		  data: {
+		    stack:[],
+		    id: ""
+		  }, 
+		  onLoad: function () {
+		      var that = this;
+			wx.request({
+			  url:"https://www.easy-mock.com/mock/5a23a9a2ff38a436c591b6fa/getArticInfo",
+			  success: function(res) {
+			    console.log(res.data.data.stack);
+			    console.log(res.data.data.List);              
+			    that.setData({
+			      stack: res.data.data.stack,
+			      id: res.data.data.List
+			    })
+			  }
+			})
+		      },   
+		})
 	```
 	
 booklist:
 booklist.wxml
 　
-     ```<view>
-          <view>
-              <view wx:for="{{bookList}}" wx:key="{{index}}">
-                  <view class="book-list-root" bindtap="bindViewTap">
-                      <image src="{{item.bookCover}}" class="book-list-image"></image>
-                      <view class="book-list-child">
-                          <view>
-                              <text class="book-list-name">{{item.bookName}}</text>
-                          </view>
-                          <view>
-                              <text class="book-list-autor">{{item.authorName}}</text>
-                          </view>
-                          <view class="book-list-des">
-                              <text>{{item.bookDes}}</text>
-                          </view>
-                      </view>
-                  </view>
-                  <view class="line"></view>            
-              </view>
-          </view>
-      </view>
+	     ```<view>
+		  <view>
+		      <view wx:for="{{bookList}}" wx:key="{{index}}">
+			  <view class="book-list-root" bindtap="bindViewTap">
+			      <image src="{{item.bookCover}}" class="book-list-image"></image>
+			      <view class="book-list-child">
+				  <view>
+				      <text class="book-list-name">{{item.bookName}}</text>
+				  </view>
+				  <view>
+				      <text class="book-list-autor">{{item.authorName}}</text>
+				  </view>
+				  <view class="book-list-des">
+				      <text>{{item.bookDes}}</text>
+				  </view>
+			      </view>
+			  </view>
+			  <view class="line"></view>            
+		      </view>
+		  </view>
+	      </view>
 ```
 booklist.js
 
-       ``` Page({
-          data: {
-              bookList:[],
-              stack:[]
-            },
-          onLoad: function (params) {
-            var that = this;
-              wx.request({
-                url:"https://www.easy-mock.com/mock/5a23a9a2ff38a436c591b6fa/getArticInfo",
-                success: function(res) {
-                  that.setData({
-                    bookList: res.data.data.stack[params.id].List.bookList,
-                  })  
-                }
-              })
-              },
-          })
+	       ``` Page({
+		  data: {
+		      bookList:[],
+		      stack:[]
+		    },
+		  onLoad: function (params) {
+		    var that = this;
+		      wx.request({
+			url:"https://www.easy-mock.com/mock/5a23a9a2ff38a436c591b6fa/getArticInfo",
+			success: function(res) {
+			  that.setData({
+			    bookList: res.data.data.stack[params.id].List.bookList,
+			  })  
+			}
+		      })
+		      },
+		  })
 	  ```
 ### 3、对navigationBarTitleText的动态修改
 
@@ -254,59 +254,59 @@ booklist.js
 
 另外要注意的是，我们要将JSON中的navigationBarTitleText设置为空，这样在跳转的过程中就不会有原始标题和修改标题之间跳转的一个效果，而是直接显示需要的标题。
 	
-    ``` .json
-          {
-              "navigationBarBackgroundColor": "#fff",
-              "navigationBarTitleText": " ",
-              "navigationBarTextStyle": "black"
-          }
-       .js
-        onLoad: function (params) {
-          var that = this;
-            wx.request({
-              url:"https://www.easy-mock.com/mock/5a23a9a2ff38a436c591b6fa/getArticInfo",
-              success: function(res) {
-                var bTypes = res.data.data.stack[params.id].bookTypes;
-                wx.setNavigationBarTitle({ 
-                  title: bTypes,
-                },1);
-              }
-            })
-          },
+	    ``` .json
+		  {
+		      "navigationBarBackgroundColor": "#fff",
+		      "navigationBarTitleText": " ",
+		      "navigationBarTextStyle": "black"
+		  }
+	       .js
+		onLoad: function (params) {
+		  var that = this;
+		    wx.request({
+		      url:"https://www.easy-mock.com/mock/5a23a9a2ff38a436c591b6fa/getArticInfo",
+		      success: function(res) {
+			var bTypes = res.data.data.stack[params.id].bookTypes;
+			wx.setNavigationBarTitle({ 
+			  title: bTypes,
+			},1);
+		      }
+		    })
+		  },
 	  ```
 ### 4、两种页面跳转方式
 #### （1）使用 navigator 方式
 navigator的跳转能够保留当前页面，可返回
       
-   ``` <navigator class="stack-view " url="booklist/booklist?id={{index}}">
-      //  点击部位，触发即可跳转
-      </navigator>
-      
-      <view class="page__bd-items page-flex" bindtap="tomyNews">
-                  <view class="page-items-lt">
-                      <image src="../../assets/images/mines/news.png" />
-                  </view>
-                  <view class="page-items-md">我的消息</view>
-                  <view class="page-items-others"></view>
-                  <view class="page-items-ft">></view>
-      </view>
+	   ``` <navigator class="stack-view " url="booklist/booklist?id={{index}}">
+	      //  点击部位，触发即可跳转
+	      </navigator>
 
-      tomyNews:function(e) {
-          wx.navigateTo({
-            url:'news/news'
-          })
-        },
+	      <view class="page__bd-items page-flex" bindtap="tomyNews">
+			  <view class="page-items-lt">
+			      <image src="../../assets/images/mines/news.png" />
+			  </view>
+			  <view class="page-items-md">我的消息</view>
+			  <view class="page-items-others"></view>
+			  <view class="page-items-ft">></view>
+	      </view>
+
+	      tomyNews:function(e) {
+		  wx.navigateTo({
+		    url:'news/news'
+		  })
+		},
 ```
 需要注意的是：程序中要求页面的层级最多只能有五层，因为这种方式保留当前页面，也就是说以这种方式跳转页面，最多只能打开5个页面。
 #### （2）使用 switchTab 方法
 
 该方法能够跳转到 tabBar 页面，并关闭其他所有非 tabBar 页面。
 
-       ``` wx.switchTab({
+        wx.switchTab({
                   url:'../leader/leader',
                   complete:function(res) {
                   }
-                })```
+                })
 		
 ### 5、swiper实现轮播
 通过 swiper 和 swiper-item 实现了书桌页面的轮播效果。
