@@ -205,26 +205,28 @@ booklist:
 
 booklist.wxml
 　
-		     	<view>
-			  <view>
-			      <view wx:for="{{bookList}}" wx:key="{{index}}">
-				  <view class="book-list-root" bindtap="bindViewTap">  
-				      <view class="book-list-child">
-					  <view>
-					      <text class="book-list-name">{{item.bookName}}</text>
-					  </view>
-					  <view>
-					      <text class="book-list-autor">{{item.authorName}}</text>
-					  </view>
-					  <view class="book-list-des">
-					      <text>{{item.bookDes}}</text>
-					  </view>
-				      </view>
+		 
+
+	<view>
+		  <view>
+		      <view wx:for="{{bookList}}" wx:key="{{index}}">
+			  <view class="book-list-root" bindtap="bindViewTap">  
+			      <view class="book-list-child">
+				  <view>
+				      <text class="book-list-name">{{item.bookName}}</text>
 				  </view>
-				  <view class="line"></view>            
+				  <view>
+				      <text class="book-list-autor">{{item.authorName}}</text>
+				  </view>
+				  <view class="book-list-des">
+				      <text>{{item.bookDes}}</text>
+				  </view>
 			      </view>
 			  </view>
+			  <view class="line"></view>            
 		      </view>
+		  </view>
+	      </view>
 
 booklist.js
 
@@ -351,3 +353,4 @@ navigator的跳转能够保留当前页面，可返回
             ☝想要一个star哦☺
 
 ### 欢迎一起交流学习哟 ☞ 782835831@qq.com 
+
